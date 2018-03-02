@@ -1,6 +1,12 @@
+const express = require('express');
 const app = require('./app');
-const port = 3000;
 
-const server = app.listen(port, function() {
-  console.log('Express server listening on port ' + port);
+app.use(express.static('public'));
+
+app.get('/', function(request, response) {
+  response.sendFile(__dirname + '/views/index.html');
+});
+
+const listener = app.listen(process.env.PORT, function() {
+  console.log('Your app is listening on port ' + listener.address().port);
 });
