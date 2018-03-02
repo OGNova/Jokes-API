@@ -13,7 +13,10 @@ exports.dad = [
   'I’m only familiar with 25 letters in the English language. I don’t know why.',
   'What\'s the best part about living in Switzerland? I don\'t know, but the flag is a big plus.',
   'Why couldn\'t the bike standup by itself? It was two tired.',
-  'What do you call a dog that can do magic? A Labracadabrador.'
+  'What do you call a dog that can do magic? A Labracadabrador.',
+  'WAITRESS: "Soup or salad?" DAD: "I don’t want a SUPER salad, I want a regular salad.”',
+  'I was interrogated over the theft of a cheese toastie and man, they really grilled me.',
+  'What does an angry pepper do? It gets jalapeño your face.'
 ],
 
 exports.bad = [
@@ -30,5 +33,14 @@ exports.bad = [
   'A woman is on trial for beating her husband to death with his guitar collection. Judge says, "First offender?" She says, "No, first a Gibson! Then a Fender!”',
   'I had a dream that I was a muffler last night. I woke up exhausted!',
   'Don\'t trust atoms. They make up everything!',
-  'What do you call a masturbating cow? Beef Stroganoff.'
+  'What do you call a masturbating cow? Beef Stroganoff.',
+  'The fattest knight at King Arthur’s round table was Sir Cumference. He acquired his size from too much pi.',
+  'KID: "Dad, make me a sandwich!" DAD: "Poof, you’re a sandwich!”',
+  'Can February March? No, but April May!',
+  'What do you call a lonely cheese? Provolone.',
+  'What did the buffalo say to his son when he dropped him off at school? Bison.'
+],
+
+exports.nerd = [
+  'You heard of that new band 1023MB? They\'re good but they haven\'t got a gig yet.'
 ];

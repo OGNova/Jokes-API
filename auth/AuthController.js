@@ -19,7 +19,8 @@ router.post('/register', function(req, res) {
   User.create({
     name: req.body.name,
     email: req.body.email,
-    password: hashedPassword
+    password: hashedPassword,
+    discordID: req.body.discordID
   }, function(err, user) {
     if (err) return res.status(500).send('There was a problem registering the user.');
 
@@ -32,7 +33,7 @@ router.post('/register', function(req, res) {
 });
 
 router.get('/me', VerifyToken, function(req, res, next) {
-  const token = req.headers['x-access-token'];
+  const token = req.headers['token'];
   
   User.findById(req.userId, { password: 0 }, function(err, user) {
     if (err) return res.status(500).send('There was a problem finding the user.');

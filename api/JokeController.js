@@ -23,4 +23,11 @@ router.get('/bad', VerifyToken, function(req, res) {
   res.status(200).send(randomJoke);
 });
 
+router.get('/nerd', VerifyToken, function(req, res) {
+  const token = req.headers['token'];
+  const randomJoke = Jokes.nerd.random();
+
+  res.status(200).send(randomJoke);
+});
+
 module.exports = router;
