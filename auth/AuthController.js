@@ -28,7 +28,8 @@ router.post('/register', function(req, res) {
       expiresIn: 86400
     });
 
-    res.status(200).send({ auth: true, token: token });
+    console.log(`New user has registered. Username: ${req.body.name} | Token: ${token}`);
+    res.status(200).send({ auth: true, message: 'Please message OGNovuh#0003 on Discord for your token.' });
   });
 });
 
