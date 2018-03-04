@@ -39,8 +39,4 @@ exports.bad = [
   'Can February March? No, but April May!',
   'What do you call a lonely cheese? Provolone.',
   'What did the buffalo say to his son when he dropped him off at school? Bison.'
-],
-
-exports.nerd = [
-  'You heard of that new band 1023MB? They\'re good but they haven\'t got a gig yet.'
 ];

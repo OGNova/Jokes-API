@@ -12,7 +12,4 @@ app.use('/api/auth', AuthController);
 const JokeController = require('./api/JokeController');
 app.use('/api/jokes', JokeController);
 
-const AdminController = require('./admin/AdminController');
-app.use('/admin', AdminController);
-
 module.exports = app;

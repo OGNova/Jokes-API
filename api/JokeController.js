@@ -9,23 +9,14 @@ const User = require('../user/User');
 const VerifyToken = require('../auth/VerifyToken');
 const Jokes = require('../assets/jokes.js');
 
-router.get('/dad', VerifyToken, function(req, res) {
-  const token = req.headers['token'];
+router.get('/dad', function(req, res) {
   const randomJoke = Jokes.dad.random();
   
   res.status(200).send(randomJoke);
 });
 
-router.get('/bad', VerifyToken, function(req, res) {
-  const token = req.headers['token'];
+router.get('/bad', function(req, res) {
   const randomJoke = Jokes.bad.random();
-
-  res.status(200).send(randomJoke);
-});
-
-router.get('/nerd', VerifyToken, function(req, res) {
-  const token = req.headers['token'];
-  const randomJoke = Jokes.nerd.random();
 
   res.status(200).send(randomJoke);
 });
