@@ -30,7 +30,7 @@ exports.bad = [
   'I bought some shoes from a drug dealer. I don\'t know what he laced them with, but I was tripping all day!',
   'Why did the invisible man turn down the job offer? He couldn\'t see himself doing it.',
   'I used to have a job at a calendar factory but I got the sack because I took a couple of days off.',
-  'A woman is on trial for beating her husband to death with his guitar collection. Judge says, "First offender?" She says, "No, first a Gibson! Then a Fender!”',
+  'A woman is on trial for beating her husband to death with his guitar collection. Judge says, "First offender?" She says, "No, first a Gibson! Then a Fender!"',
   'I had a dream that I was a muffler last night. I woke up exhausted!',
   'Don\'t trust atoms. They make up everything!',
   'What do you call a masturbating cow? Beef Stroganoff.',
@@ -42,5 +42,17 @@ exports.bad = [
 ],
 
 exports.nerd = [
-  'You heard of that new band 1023MB? They\'re good but they haven\'t got a gig yet.'
+  'You heard of that new band 1023MB? They\'re good but they haven\'t got a gig yet.',
+  'A Roman soldier walked into a bar. He held up two fingers and said to the bartender, "Five beers please."',
+  'What did the cell say to his sister when she stepped on his foot?\nMitosis!',
+  'What did E.T.\'s mother say to him when he got home?\nWhere on earth have you been!',
+  'There are 10 kinds of people in this world.\nThose who understand binary, and those who don\'t.',
+  'My software never has bugs. It just develops random features.',
+  'I would love to change the world, but they won’t give me the source code.',
+  'The code that is the hardest to debug is the code that you know cannot possibly be wrong.',
+  'Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, and the Universe trying to produce bigger and better idiots. So far, the Universe is winning.',
+  'I’m not anti-social; I’m just not user friendly.',
+  'Michael Sinz: “Programming is like sex, one mistake and you have to support it for the rest of your life.”',
+  'Programmers are tools for converting caffeine into code.',
+  'My attitude isn’t bad. It’s in beta.'
 ];
