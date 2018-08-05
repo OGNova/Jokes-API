@@ -8,7 +8,7 @@ router.use(bodyParser.json());
 
 const User = require('../user/User');
 
-const { masterToken } = require('config.js');
+const { masterToken } = require('../config.js');
 
 router.get('/:token', function(req, res) {
   if (!req.params.masterToken) throw new Error('You must supply the master token to get info on other users.');
