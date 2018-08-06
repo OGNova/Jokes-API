@@ -32,7 +32,7 @@ router.delete('/:token', function(req, res) {
   });
 });
 
-router.get('/users', function(req, res) {
+router.get('/users/list', function(req, res) {
   if (!req.headers.mastertoken) throw new Error('You must supply the master token to get info on other users.');
   if (req.headers.mastertoken != masterToken) return res.status(403).send('The maze is not for you.');
   User.find({}, function(err, users) {

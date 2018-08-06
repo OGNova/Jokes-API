@@ -6,11 +6,11 @@ router.use(bodyParser.urlencoded({ extended: false }));
 router.use(bodyParser.json());
 
 const User = require('../user/User');
-const Jokes = require('../assets/jokes.js');
+const Jokes = require('../assets/JSON/jokes');
 
 router.get('/dad', function(req, res) {
   const token = req.headers.authorization;
-  if (!token) throw new Error('Please supply a token.');
+  if (!token) res.status(401).json({ code: 401, message: 'Please supply a token.' });
   User.findOne({ token: token }, function(err, user) {
     if (err) return res.status(500).json({ code: 500, message: 'Something went wrong, please try again later.' });
     if (!user) return res.status(403).json({ code: 403, message: 'Please supply a valid token.' });
@@ -22,7 +22,7 @@ router.get('/dad', function(req, res) {
 
 router.get('/bad', function(req, res) {
   const token = req.headers.authorization;
-  if (!token) throw new Error('Please supply a token.');
+  if (!token) res.status(401).json({ code: 401, message: 'Please supply a token.' });
   User.findOne({ token: token }, function(err, user) {
     if (err) return res.status(500).json({ code: 500, message: 'Something went wrong, please try again later.' });
     if (!user) return res.status(403).json({ code: 403, message: 'Please supply a valid token.' });
@@ -34,7 +34,7 @@ router.get('/bad', function(req, res) {
 
 router.get('/nerd', function(req, res) {
   const token = req.headers.authorization;
-  if (!token) throw new Error('Please supply a token.');
+  if (!token) res.status(401).json({ code: 401, message: 'Please supply a token.' });
   User.findOne({ token: token }, function(err, user) {
     if (err) return res.status(500).json({ code: 500, message: 'Something went wrong, please try again later.' });
     if (!user) return res.status(403).json({ code: 403, message: 'Please supply a valid token.' });
