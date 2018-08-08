@@ -2,7 +2,7 @@
   "name": "api",
   "version": "0.0.1",
   "description": "",
-  "main": "server.js",
+  "main": "API.js",
   "scripts": {
     "test": "eslint .",
     "start": "node API.js"
