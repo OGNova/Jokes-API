@@ -4,12 +4,14 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "eslint ."
+    "test": "eslint .",
+    "start": "node server.js"
   },
   "author": "OGNovuh",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "chalk": "^2.4.1",
     "express": "^4.16.3",
     "mongoose": "^5.2.6"
   }
