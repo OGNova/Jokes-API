@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "eslint .",
-    "start": "node server.js"
+    "start": "node API.js"
   },
   "author": "OGNovuh",
   "license": "MIT",
