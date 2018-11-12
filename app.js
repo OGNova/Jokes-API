@@ -1,9 +1,14 @@
 const express = require('express');
+const morgan = require('morgan');
 
 const db = require('./db');
 require('./modules/Prototypes.js');
 
+const logger = morgan('dev');
+
 const app = express();
+
+app.use(logger);
 
 const UserController = require('./user/UserController');
 app.use('/api', UserController);
